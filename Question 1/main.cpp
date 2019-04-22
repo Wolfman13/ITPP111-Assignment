@@ -39,6 +39,7 @@ int getNum(std::string textField) {
     // Checks to see if previous extraction has failed
     if (std::cin.fail()) {
       // It failed so now it needs to handle the failure
+	  std::cout << "Please makes sure you enter only integer" << std::endl;
       // Puts the cin back in normal operating mode
       std::cin.clear();
       // Remove the bad input
